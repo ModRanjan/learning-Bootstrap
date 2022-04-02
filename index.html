@@ -1,203 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bootstrap Theme</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Blogen</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item px-2">
+              <a href="index.html" class="nav-link active">Dashboard</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="posts.html" class="nav-link">Posts</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="users.html" class="nav-link">Users</a>
+            </li>
+          </ul>
 
-    <title>Bootstrap Sandbox</title>
-</head>
-
-<body>
-    <header>
-        <h1 class="display-3 text-center my-4">Basic Typography</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="dropdown">
-                        <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
-                            2: Utilities
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="2_2_basic_typography.html">2.2 Basic Typography</a>
-                            <a class="dropdown-item" href="2_3_text_alignment_display.html">2.3 Text Alignment &
-                                Display</a>
-                            <a class="dropdown-item" href="2_4_floats_position.html">2.4 Floats & Position</a>
-                            <a class="dropdown-item" href="2_5_colors_background.html">2.5: Colors & Background</a>
-                            <a class="dropdown-item" href="2_6_spacing.html">2.6 Spacing</a>
-                            <a class="dropdown-item" href="2_7_sizing.html">2.7 Sizing</a>
-                            <a class="dropdown-item" href="2_8_breakpoints.html">2.8 Breakpoints</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="dropdown">
-                        <button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
-                            3: CSS Components
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="3_2_buttons.html">3.2 Buttons</a>
-                            <a class="dropdown-item" href="3_3_navbar.html">3.3 Navbar</a>
-                            <a class="dropdown-item" href="3_4_list_groups_badges.html">3.4 List Groups & Badges</a>
-                            <a class="dropdown-item" href="3_5_forms.html">3.5 Forms</a>
-                            <a class="dropdown-item" href="3_6_input_groups.html">3.6 Input Groups</a>
-                            <a class="dropdown-item" href="3_7_alerts_progress.html">3.7 Alerts & Progress</a>
-                            <a class="dropdown-item" href="3_8_tables_pagination.html">3.8 Tables & Pagination</a>
-                            <a class="dropdown-item" href="3_9_cards.html">3.9 Cards</a>
-                            <a class="dropdown-item" href="3_10_media_object.html">3.10 Media Objects</a>
-                            <a class="dropdown-item" href="3_11_jumbotron.html">3.11 Jumbotron</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="dropdown">
-                        <button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
-                            4: Grid & Flexbox
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="4_2_grid_system.html">4.2 Grid System</a>
-                            <a class="dropdown-item" href="4_3_grid_alignment.html">4.3 Grid Alignment</a>
-                            <a class="dropdown-item" href="4_4_flexbox.html">4.4 Flexbox</a>
-                            <a class="dropdown-item" href="4_5_auto_margins_wrapping_order.html">4.5 Auto Margins &
-                                Wrap</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="dropdown">
-                        <button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
-                            5: JavaScript Widgets
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="5_2_carousel.html">5.2 Carousel</a>
-                            <a class="dropdown-item" href="5_3_collapse.html">5.3 Collapse</a>
-                            <a class="dropdown-item" href="5_4_tooltips.html">5.4 Tooltips</a>
-                            <a class="dropdown-item" href="5_5_popovers.html">5.5 Popovers</a>
-                            <a class="dropdown-item" href="5_6_modals.html">5.6 Modals</a>
-                            <a class="dropdown-item" href="5_7_scrollspy.html">5.7 ScrollSpy</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown mr-3">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                <i class="fas fa-user"></i> Welcome Brad
+              </a>
+              <div class="dropdown-menu">
+                <a href="profile.html" class="dropdown-item">
+                  <i class="fas fa-user-circle"></i> Profile
+                </a>
+                <a href="settings.html" class="dropdown-item">
+                  <i class="fas fa-cog"></i> Settings
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">
+                <i class="fas fa-user-times"></i> Logout
+              </a>
+            </li>
+          </ul>
         </div>
-        <hr>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="main-header" class="py-2 bg-primary text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1><i class="fas fa-cog"></i> Dashboard</h1>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <div class="container">
-        <!--####################START HERE######################-->
-
-        <!-- HEADINGS -->
-        <h1>Heading One</h1>
-        <h2>Heading Two</h2>
-        <h3>Heading Three</h3>
-        <h4>Heading Four</h4>
-        <h5 class="h2">Heading Five</h5>
-        <h6>Heading Six</h6>
-
-        <br>
-        <br>
-
-
-        <!-- DISPLAY CLASSES -->
-        <h1 class="display-1">Display 1</h1>
-        <h1 class="display-2">Display 2</h1>
-        <h1 class="display-3">Display 3</h1>
-        <h1 class="display-4">Display 4</h1>
-
-        <br>
-        <br>
-
-        <!-- PARAGRAPHS -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero
-            numquam
-            voluptatem quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis
-            sapiente.</p>
-
-        <!-- LEAD -->
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam
-            consequatur vero numquam
-            voluptatem quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis
-            sapiente.</p>
-
-        <!-- MONOSPACE PARAGRAPH -->
-        <p class="text-monospace">My monospace paragraph</p>
-
-        <!-- STYLE CLASSES -->
-        <p class="font-weight-bold">Bold Text</p>
-        <p class="font-weight-normal">Normal Text</p>
-        <p class="font-italic">Italic Text</p>
-
-        <!-- TEXT TRANSFORMS -->
-        <p class="text-lowercase">MAKE LOWERCASE</p>
-        <p class="text-uppercase">make uppercase</p>
-        <p class="text-capitalize">make capitalized</p>
-
-        <br>
-        <br>
-
-        <!-- BLOCKQUOTES -->
-        <blockquote class="blockquote">
-            <p>This is a blockquote</p>
-        </blockquote>
-
-        <!-- BLOCKQUOTE RIGHT ALIGNED -->
-        <blockquote class="blockquote text-right">
-            <p>This is a blockquote aligned right</p>
-        </blockquote>
-
-        <!-- BLOCKQUOTE WITH FOOTER -->
-        <blockquote class="blockquote text-right">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">Someone famous in
-                <cite title="Source Title">Source Title</cite>
-            </footer>
-        </blockquote>
-
-        <br>
-        <br>
-
-        <!-- TEXT TRUNCATE -->
-        <div class="text-truncate">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellat nobis sunt qui consequatur
-            architecto veritatis,
-            iure odit, debitis pariatur perspiciatis? Asperiores facere veniam, totam ullam dignissimos voluptate atque!
-            Eos, animi
-            quos. Sint magni nulla provident et consequatur officia tempora!
+    <!-- ACTIONS -->
+    <section id="actions" class="py-4 mb-4 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a
+              href="#"
+              class="btn btn-primary btn-block"
+              data-toggle="modal"
+              data-target="#addPostModal"
+            >
+              <i class="fas fa-plus"></i> Add Post
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a
+              href="#"
+              class="btn btn-success btn-block"
+              data-toggle="modal"
+              data-target="#addCategoryModal"
+            >
+              <i class="fas fa-plus"></i> Add Category
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a
+              href="#"
+              class="btn btn-warning btn-block"
+              data-toggle="modal"
+              data-target="#addUserModal"
+            >
+              <i class="fas fa-plus"></i> Add User
+            </a>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <br>
-        <br>
+    <!-- POSTS -->
+    <section id="posts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card">
+              <div class="card-header">
+                <h4>Latest Posts</h4>
+              </div>
+              <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Post One</td>
+                    <td>Web Development</td>
+                    <td>May 10 2018</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="fas fa-angle-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Post Two</td>
+                    <td>Tech Gadgets</td>
+                    <td>May 11 2018</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="fas fa-angle-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Post Three</td>
+                    <td>Web Development</td>
+                    <td>May 13 2018</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="fas fa-angle-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Post Four</td>
+                    <td>Business</td>
+                    <td>May 15 2018</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="fas fa-angle-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Post Five</td>
+                    <td>Web Development</td>
+                    <td>May 17 2018</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="fas fa-angle-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Post Six</td>
+                    <td>Health & Wellness</td>
+                    <td>May 20 2018</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="fas fa-angle-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center bg-primary text-white mb-3">
+              <div class="card-body">
+                <h3>Posts</h3>
+                <h4 class="display-4"><i class="fas fa-pencil-alt"></i> 6</h4>
+                <a href="posts.html" class="btn btn-outline-light btn-sm"
+                  >View</a
+                >
+              </div>
+            </div>
 
-        <!-- LISTS -->
-        <ul class="list-unstyled">
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-        </ul>
+            <div class="card text-center bg-success text-white mb-3">
+              <div class="card-body">
+                <h3>Categories</h3>
+                <h4 class="display-4"><i class="fas fa-folder"></i> 4</h4>
+                <a href="categories.html" class="btn btn-outline-light btn-sm"
+                  >View</a
+                >
+              </div>
+            </div>
 
-        <!-- INLINE LIST -->
-        <ul class="list-inline">
-            <li class="list-inline-item">Lorem ipsum</li>
-            <li class="list-inline-item">Lorem ipsum </li>
-            <li class="list-inline-item">Lorem ipsum </li>
-        </ul>
+            <div class="card text-center bg-warning text-white mb-3">
+              <div class="card-body">
+                <h3>Users</h3>
+                <h4 class="display-4"><i class="fas fa-users"></i> 4</h4>
+                <a href="users.html" class="btn btn-outline-light btn-sm"
+                  >View</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="lead text-center">
+              Copyright &copy;
+              <span id="year"></span>
+              Blogen
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODALS -->
+
+    <!-- ADD POST MODAL -->
+    <div class="modal fade" id="addPostModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">Add Post</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="category">Category</label>
+                <select class="form-control">
+                  <option value="">Web Development</option>
+                  <option value="">Tech Gadgets</option>
+                  <option value="">Business</option>
+                  <option value="">Health & Wellness</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="image">Upload Image</label>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="image" />
+                  <label for="image" class="custom-file-label"
+                    >Choose File</label
+                  >
+                </div>
+                <small class="form-text text-muted">Max Size 3mb</small>
+              </div>
+              <div class="form-group">
+                <label for="body">Body</label>
+                <textarea name="editor1" class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal">
+              Save Changes
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div style="margin-top:500px;"></div>
+    <!-- ADD CATEGORY MODAL -->
+    <div class="modal fade" id="addCategoryModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">Add Category</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success" data-dismiss="modal">
+              Save Changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
-</body>
+    <!-- ADD USER MODAL -->
+    <div class="modal fade" id="addUserModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-white">
+            <h5 class="modal-title">Add User</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="password2">Confirm Password</label>
+                <input type="password" class="form-control" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-warning" data-dismiss="modal">
+              Save Changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+
+    <script>
+      // Get the current year for the copyright
+      $('#year').text(new Date().getFullYear())
+
+      CKEDITOR.replace('editor1')
+    </script>
+  </body>
 </html>
